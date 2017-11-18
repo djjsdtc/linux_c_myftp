@@ -1,0 +1,5 @@
+AM_CFLAGS=-Wno-unused-result
+AUTOMAKE_OPTIONS=foreign
+bin_PROGRAMS=ftpserver
+ftpserver_SOURCES=recvfile_server.c server_back.c session_service.c userlist.c sendfile_server.c server_front.c usercommand.c ftppublic.h ftpserver.h
+ftpserver_LDADD=-lcrypt -lpthread

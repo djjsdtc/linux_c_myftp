@@ -1,0 +1,4 @@
+AM_CFLAGS=-Wno-unused-result
+AUTOMAKE_OPTIONS=foreign
+bin_PROGRAMS=myftp
+myftp_SOURCES=createconn.c localcommand.c myftp.c recvfile.c remotecommand.c sendfile.c ftppublic.h myftp_header.h
